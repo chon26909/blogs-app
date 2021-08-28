@@ -1,19 +1,16 @@
 <template>
-  <div>
     <b-card
       :title="post.title"
       :img-src="post.image"
       :img-alt="post.title"
       img-top
       tag="article"
-      style="max-width: 20rem"
-      class="mb-2"
+      class="img-card"
     >
       <b-card-text>
         {{ post.content }}
       </b-card-text>
     </b-card>
-  </div>
 </template>
 
 <script>
@@ -22,4 +19,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.img-card {
+  margin: 10px 0;
+}
+.img-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+</style>
