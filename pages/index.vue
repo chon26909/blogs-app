@@ -13,8 +13,8 @@ export default {
   },
   computed: {
     dataPosts() {
-        return this.$store.getters.getAllPosts;
-    }
-  }
+      return this.$store.state.posts.dataPosts
+    },
+  },
 }
 </script>

@@ -1,16 +1,16 @@
 <template>
-    <Nuxt/>
+  <div>
+    <Navbar />
+    <Nuxt />
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style>
 body {
-    font-family: 'Kanit', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
-
 </style>

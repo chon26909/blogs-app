@@ -11,11 +11,8 @@ export default {
   },
   methods: {
     async submitted(postData) {
-      await axios.post(
-        'https://nuxt-blogs-app-default-rtdb.asia-southeast1.firebasedatabase.app/posts.json',
-        postData
-      )
-      await this.$router.push("/")
+      await this.$store.dispatch('posts/create',postData)
+      this.$router.push("/")
     },
   },
 }
